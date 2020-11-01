@@ -18,9 +18,20 @@
 3、利用相关的关键字进行重写（tostring）和调用（super）
 4、其中涉及到@Override（有区别于重写）
 ## 核心方法  
-1、利用数组的知识将主类中的参数输入。
+1、利用数组的知识将主类中的参数输入。  
+```
+Course[] c = new Course[3];
+		c[0] = new Course(0, "java","北京","10月22日","张某某");
+		c[1] = new Course(1, "数据库","天津","10月25日","刘某某");
+		c[2] = new Course(2, "高数","唐山","10月27日","周某某");
+```
 2、使用super（）方法调用父类。  
 3、使用tostring（ToString方法会返回一个“以文本方式表示”此对象的字符串。结果应是一个简明但易于读懂的信息表达式。）  
+```
+public String toString() {
+		return"编号" + this.number+",姓名："+this.name +this.sex;
+	}
+```
 4、类和对象的编写和调用
 
 ## 实验结果  
